@@ -48,6 +48,7 @@ User.init(
       },
     },
     sequelize,
+    tableName:'app_user',
     timestamps: false,
     freezeTableName: true,
     underscored: true,
