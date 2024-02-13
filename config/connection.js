@@ -8,8 +8,8 @@ if (process.env.JAWSDB_URL) {
 } else {
   sequelize = new Sequelize(
     process.env.MYSQL_DATABASE,
-    "root",
-    process.env.MYSQL_ROOT_PASSWORD,
+    process.env.MYSQL_USER,
+    process.env.MYSQL_PASSWORD,
     {
       host: process.env.DB_HOST,
       dialect: 'mysql',
